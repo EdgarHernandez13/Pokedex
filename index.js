@@ -17,6 +17,30 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`,{
     pokemonInfo.innerHTML = `<span id="height"> Height: ${pokemon.height} </span> <span id="weight"> Weight: ${pokemon.weight} </span>`
 }))
 
+// next.addEventListener("click", (e)=>{
+//     id= id+1
+//     fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`,{
+//         method: "GET"
+//     }).then(res=>res.json().then(data => {
+//         pokemon = data
+//         pokemonImage.setAttribute("src", pokemon.sprites.front_default)
+//         pokemonName.innerText = pokemon.name
+//         pokemonInfo.innerHTML = `<span id="height"> Height: ${pokemon.height} </span> <span id="weight"> Weight: ${pokemon.weight} </span>`
+//     }))
+// })
+
+// previous.addEventListener("click", (e)=>{
+//     id= id+1
+//     fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`,{
+//         method: "GET"
+//     }).then(res=>res.json().then(data => {
+//         pokemon = data
+//         pokemonImage.setAttribute("src", pokemon.sprites.front_default)
+//         pokemonName.innerText = pokemon.name
+//         pokemonInfo.innerHTML = `<span id="height"> Height: ${pokemon.height} </span> <span id="weight"> Weight: ${pokemon.weight} </span>`
+//     }))
+// })
+
 button.addEventListener("click", (e)=>{
     id=searchBox.value
 
